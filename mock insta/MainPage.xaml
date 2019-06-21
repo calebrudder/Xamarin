@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms" xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml" xmlns:d="http://xamarin.com/schemas/2014/forms/design" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" mc:Ignorable="d" x:Class="insta.MainPage">
+    <ContentPage.Padding>
+        <OnPlatform x:TypeArguments="Thickness"
+            
+                    iOS="0,30,0,0"
+                    
+            />
+    </ContentPage.Padding>
+    
+    <StackLayout>
+        
+        <StackLayout Padding="5">
+            <Label
+                Text="nyc_photographer"
+             />
+        </StackLayout>
+        
+        <Image Source="http://lorempixel.com/1920/1080/nature/3/" />
+        
+            
+        <StackLayout Orientation="Horizontal" Padding="5">
+                   
+            <Button
+                Text="Like"
+            />
+            <Button
+                Text="Comment"
+            />
+            <Button
+                Text="Share"
+            />
+                    
+        </StackLayout>
+            
+        <BoxView Color="#f0f0f0" HeightRequest="1"/>
+       
+        <StackLayout Padding="5">
+            <Label
+                Text="700 Likes"
+                FontSize="20"
+                FontAttributes="Bold"
+            />
+            <Label 
+                Text="This is a shot yesterday in Skanor, Sweden, when driving home, from a couple days of work in Denmark."
+            />
+            
+        </StackLayout> 
+        
+    </StackLayout>
+</ContentPage>
